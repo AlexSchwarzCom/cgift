@@ -1,0 +1,26 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('alex_theme/dateitext-css') }}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+  <div class="wrapper">
+  <div class="flexbox-container">
+    {% block content %}
+
+        <div class="file-column-left">{{ content.field_image }}</div>
+
+        <div class="file-text-column-right">
+          {{ content.field_text }}
+        </div>
+
+    {% endblock %}
+  </div>
+  </div>
+</div>
+{% endblock paragraph %}
+<div class="clear"></div>

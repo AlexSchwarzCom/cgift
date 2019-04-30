@@ -1,0 +1,52 @@
+
+.viewsreference--view-title { display: none; }
+
+.paragraph--type--kontaktbanner {
+	position: relative;
+		height: 150px;
+		width: 100%;
+		background-color: #ff9d00;
+	background-image: url("/48specials/themes/custom/alex_theme/css/paragraphs/../../images/backgrounds/rose_vector_rot.svg");
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.banner-content { padding-left: 6%; width: 90%; padding-top: 40px; }
+.banner-content p, .banner-content .views-element-container { color: #FFF; float: left; display: inline-block; }
+.banner-content p { margin-right: 8%; font-size: 1.2em; padding-top: 10px;}
+.banner-content .views-element-container a { color: #FFF; font-size: 2.5em; padding-top: 25px; display: block; }
+.banner-content .views-element-container a::before {
+    width: 50px;
+    height: 50px;
+    background: url('/48specials/themes/custom/alex_theme/css/paragraphs/../../images/icons/tel_24.svg') no-repeat;
+    background-size: 50px 50px;
+    content: "";
+    display: block;
+    position: relative;
+    float: left;
+    margin-right: 12px;
+		margin-top: -11px;
+}
+
+@media only screen and (max-width: 1244px) { 
+	.banner-content { padding-top: 30px; padding-left: 3%; width: 94%; }
+		.banner-content .views-element-container a { font-size: 1.6em; }
+		.banner-content p { font-size: 1em; }
+		.banner-content .views-element-container a::before { width: 30px height: 30px; background-size: 30px 30px; margin-top: 0px; margin-right: 0px; }
+	}
+@media only screen and (max-width: 930px) {
+	.banner-content { padding-left: 4%; padding-top: 30px;}
+	.banner-content p { float: none; width: 100%; display: block; font-size: 1em; }
+	.paragraph--type--kontaktbanner { 	height: 190px; }
+	.banner-content .views-element-container a { font-size: 2em; }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	.banner-content { padding-top: 20px;}
+	.banner-content p { font-size: 1em; }
+	.paragraph--type--kontaktbanner { height: 200px;  }
+	.banner-content .views-element-container a { font-size: 1.3em; padding-top: 15px; }
+	.banner-content .views-element-container a::before { width: 30px; height: 30px; background-size: 30px 30px; margin-top: -6px; margin-right: 6px;  }
+}

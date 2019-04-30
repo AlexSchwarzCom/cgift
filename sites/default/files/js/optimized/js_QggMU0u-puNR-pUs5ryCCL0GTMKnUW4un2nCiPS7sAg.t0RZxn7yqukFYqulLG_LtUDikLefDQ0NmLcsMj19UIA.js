@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/core/modules/quickedit/js/models/EditorModel.js. */
+(function(l,u){u.quickedit.EditorModel=l.Model.extend({defaults:{originalValue:null,currentValue:null,validationErrors:null}})})(Backbone,Drupal);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/core/modules/quickedit/js/models/EditorModel.js. */

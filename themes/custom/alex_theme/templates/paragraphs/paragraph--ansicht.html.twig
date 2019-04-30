@@ -1,0 +1,18 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% set headline = content.field_headline_h2|render %}
+{% set link = content.field_link|render %}
+{{ attach_library('alex_theme/views-css') }}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}    
+    {% if headline %}<div class="wrapper wrapper-top">{{ content.field_headline_h2 }} {% if link %}<div class="link column">{{ content.field_link }}</div>{% endif %}</div>{% endif %}     
+      {{ content.field_ansicht }}   
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

@@ -1,0 +1,51 @@
+
+.akkordeon-paragraph {padding: 20px 0px 20px 0px; }
+
+h4.accordeon_header { padding: 10px 0px 20px 0px; margin: 10px 0px; border-bottom: 1px solid #FFF; color: #FFF; font-family: 'Assistant-Regular'; text-transform: uppercase; }
+.paragraph--type--akkordeon-box .accordeon:last-child h4.accordeon_header { border-bottom: none; }
+.accordeon_content { color: #FFF; }
+
+h4.accordeon_header::after {
+	   position: relative;
+	   display: inline-block;
+	  float: right;
+   width: 20px;
+   height: 24px;
+   content: "";
+   background: url('../../images/icons/Pfeil-Accordeon-hellgrau.svg') no-repeat;
+   background-size: 20px 24px;
+   margin-left: 8px;
+	   }
+
+.paragraph--type--akkordeon-box {
+color: #fad151; padding: 30px 50px 50px 50px; font-family: 'Assistant-SemiBold';
+}
+
+.column1 .paragraph--type--akkordeon-box {
+	background: #1f2223;
+}
+.column1 .paragraph--type--akkordeon-box h4.accordeon_header {
+	border-bottom: 1px solid #7D8489; color: #7D8489;
+}
+
+.column2 .paragraph--type--akkordeon-box h4.accordeon_header::after {
+	   background: url('../../images/icons/Pfeil-Accordeon-weiss.svg') no-repeat;
+}
+
+.column2 .paragraph--type--akkordeon-box {
+	background: #7d8489;
+}
+.paragraph--type--akkordeon-box h2 {
+		color: #FFF; max-width: 360px; font-family: "Assistant-Bold"; font-size: 1.7em; line-height: 1.15em; margin: 14px 0px 35px 0px;
+}
+
+@media screen and (max-width: 480px){
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+}
+@media screen and (min-width: 769px) {
+
+}

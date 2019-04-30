@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/core/modules/path/path.js. */
+(function(a,t){t.behaviors.pathDetailsSummaries={attach:function(i){a(i).find('.path-form').drupalSetSummary(function(i){var r=a('.js-form-item-path-0-alias input').val();return r?t.t('Alias: @alias',{'@alias':r}):t.t('No alias')})}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/core/modules/path/path.js. */

@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/themes/custom/alex_theme/js/scrolling_waypoint.js. */
+(function(e){e(document).ready(function(){var t=e('.outer-header'),a=e('#logo'),o=e('.main-menus-links'),n=e('#header'),i=0,r=60,d=t.waypoint({handler:function(e){if(e=='down'){n.addClass('sticky-header')}
+else{n.removeClass('sticky-header')}},offset:function(){return-o.outerHeight()-r}})})})(jQuery);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/themes/custom/alex_theme/js/scrolling_waypoint.js. */

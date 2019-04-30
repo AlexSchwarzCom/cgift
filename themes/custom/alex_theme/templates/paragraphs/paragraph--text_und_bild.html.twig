@@ -1,0 +1,39 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('alex_theme/textbild-css') }}
+{% set ausrichtung = content.field_ausrichtung|render %}
+{% set design = content.field_design|render %}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+  <div class="wrapper">
+  <div class="flexbox-container">
+    {% block content %}
+
+    {% if ausrichtung == 'links' %}
+        <div class="image-column image-column-left">{{ content.field_image }}</div>
+    {% endif %}
+    {% if ausrichtung == 'rechts' %}
+        <div class="image-column image-column-right">{{ content.field_image }}</div>
+    {% endif %}
+
+      {% if ausrichtung == 'links' %}
+        <div class="text-column text-column-right">
+    {% endif %}
+    {% if ausrichtung == 'rechts' %}
+        <div class="text-column text-column-left">
+    {% endif %}
+          {{ content.field_text }}
+        </div>
+    {% endblock %}
+  </div>
+  </div>
+</div>
+</div>
+{% endblock paragraph %}
+<div class="clear"></div>
+

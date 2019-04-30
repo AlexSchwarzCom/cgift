@@ -1,0 +1,60 @@
+
+
+.background-image, .paragraph--type--bild-fullscreen-mit-text {
+	position: relative;
+    width: 100%;
+    height: 400px;
+}
+.paragraph--type--bild-fullscreen-mit-text { overflow: hidden; }
+.background-image { background-attachment: fixed; }
+
+.paragraph--type--bild-fullscreen-mit-text h2 { color: #FFF; font-size: 1.35em; margin: 30px 0px 0px 0px; }
+.paragraph--type--bild-fullscreen-mit-text h1 { font-size: 3em; }
+.text-absolute, .background-image-overlay {
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 400px;
+	z-index: 2;
+	}
+	
+	.background-image-overlay { top: 0px; left: 0px; padding: 0px; }
+	
+.innerwrapper {
+	height: auto;
+	position: absolute;
+	width: 80%;
+	max-width: 800px;
+ 	top: 50%;
+ 	left: 50%;
+  	transform: translate(-50%, -50%);
+	 }
+
+	 .background-image-overlay {
+	 		z-index: 1;
+	 		background: rgba(30,30,60,0.5);
+	 }
+
+.text-absolute p, .text-absolute h1, .text-absolute a {
+		color: #FFF;
+}
+
+.mit-background {
+	background: #f4f4f4;
+	padding: 40px 0px;
+}
+
+@media only screen and (min-width: 1921px) {
+.background-image, .paragraph--type--bild-fullscreen-mit-text, .background-image-overlay, .text-absolute {
+    width: 100%;
+    height: 43vh;
+}
+}
+
+@media only screen and (max-width: 790px) {
+	.paragraph--type--bild-fullscreen-mit-text h1 { font-size: 2em; }
+.mit-background { padding: 10px 0px; }
+.background-image, .paragraph--type--bild-fullscreen-mit-text, .background-image-overlay, .text-absolute {  width: 100%; height: 55vh; }
+.innerwrapper { width: 90%; }
+.paragraph--type--bild-fullscreen-mit-text h2 { font-size: 1em;}
+}

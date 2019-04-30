@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/core/misc/debounce.js. */
+;Drupal.debounce=function(n,e,t){var r=void 0,u=void 0;return function(){for(var l=arguments.length,a=Array(l),i=0;i<l;i++){a[i]=arguments[i]};var o=this,f=function(){r=null;if(!t){u=n.apply(o,a)}},p=t&&!r;clearTimeout(r);r=setTimeout(f,e);if(p){u=n.apply(o,a)};return u}};
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/core/misc/debounce.js. */

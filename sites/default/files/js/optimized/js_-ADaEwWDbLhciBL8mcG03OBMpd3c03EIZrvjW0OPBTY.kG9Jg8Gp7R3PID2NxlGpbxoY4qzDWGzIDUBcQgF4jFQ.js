@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/core/modules/toolbar/js/views/MenuVisualView.js. */
+(function(e,n,i){i.toolbar.MenuVisualView=n.View.extend({initialize:function(){this.listenTo(this.model,'change:subtrees',this.render)},render:function(){var i=this,n=this.model.get('subtrees');Object.keys(n||{}).forEach(function(e){i.$el.find('#toolbar-link-'+e).once('toolbar-subtrees').after(n[e])});if('drupalToolbarMenu' in e.fn){this.$el.children('.toolbar-menu').drupalToolbarMenu()}}})})(jQuery,Backbone,Drupal);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/core/modules/toolbar/js/views/MenuVisualView.js. */

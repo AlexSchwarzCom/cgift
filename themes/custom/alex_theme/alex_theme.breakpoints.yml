@@ -1,0 +1,24 @@
+alex_theme.mobile:
+  label: mobile
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+alex_theme.tablet:
+  label: tablet
+  mediaQuery: 'all and (min-width: 550px) and (max-width: 849px)'
+  weight: 1
+  multipliers:
+    - 1x
+alex_theme.laptop:
+  label: laptop
+  mediaQuery: 'all and (min-width: 850px) and (max-width: 1279px)'
+  weight: 1
+  multipliers:
+    - 1x
+alex_theme.bigscreen:
+  label: bigscreen
+  mediaQuery: 'all and (min-width: 1280px)'
+  weight: 2
+  multipliers:
+    - 1x

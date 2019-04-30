@@ -1,0 +1,22 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }} style="background-color:#{{ content.field_hintergrund_farbe }};">
+  <div class="wrapper">
+  	<div class="text-center">
+    {% block content %}
+     {{ content.field_subline_h2 }}
+      <div class="icon-wrapper">      
+      {{ content.field_icons }}
+      <div class="clear"></div>
+      </div>
+    {% endblock %}
+  </div>
+   </div>
+ </div>
+{% endblock paragraph %}

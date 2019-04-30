@@ -1,0 +1,16 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}          
+      {{ content.field_image }}
+      {{ content.field_caption }}
+         {% if content.field_link %}<a class="link-absolute" href="{{ content.field_link }}"></a>{% endif %}
+    {% endblock %}
+ </div>
+{% endblock paragraph %}

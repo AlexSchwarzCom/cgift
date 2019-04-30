@@ -1,0 +1,21 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('alex_theme/kontaktbanner-css') }}
+{% block paragraph %}
+<div class="wrapper">
+  <div{{ attributes.addClass(classes) }}>
+    <div class="banner-content">
+  	  {% block content %}
+		{{ content }}
+    {% endblock %}
+    </div>
+    </div>
+  </div>
+{% endblock paragraph %}
+
+<div class="clear"></div>

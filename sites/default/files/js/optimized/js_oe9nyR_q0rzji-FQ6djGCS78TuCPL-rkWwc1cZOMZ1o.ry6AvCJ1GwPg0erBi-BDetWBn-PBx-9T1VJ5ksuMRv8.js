@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/modules/superfish/js/superfish.js. */
+(function(s,u,i){'use strict';u.behaviors.superfish={attach:function(u,i){s.each(i.superfish||{},function(e,i){var n=s('ul#'+i.id,u);if(i.plugins||!1){if(i.plugins.supersubs||!1){n.supersubs(i.plugins.supersubs)}};n.superfish(i.sf);if(i.plugins||!1){if(i.plugins.touchscreen||!1){n.sftouchscreen(i.plugins.touchscreen)};if(i.plugins.smallscreen||!1){n.sfsmallscreen(i.plugins.smallscreen)};if(i.plugins.supposition||!1){n.supposition()}}})}}})(jQuery,Drupal,drupalSettings);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/modules/superfish/js/superfish.js. */

@@ -1,0 +1,4 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/core/modules/quickedit/js/models/BaseModel.js. */
+;var _typeof=typeof Symbol==='function'&&typeof Symbol.iterator==='symbol'?function(t){return typeof t}:function(t){return t&&typeof Symbol==='function'&&t.constructor===Symbol&&t!==Symbol.prototype?'symbol':typeof t};(function(t,e){t.quickedit.BaseModel=e.Model.extend({initialize:function(t){this.__initialized=!0;return e.Model.prototype.initialize.call(this,t)},set:function(t,o,i){if(this.__initialized){if((typeof t==='undefined'?'undefined':_typeof(t))==='object'){t.validate=!0}
+else{if(!i){i={}};i.validate=!0}};return e.Model.prototype.set.call(this,t,o,i)}})})(Drupal,Backbone);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/core/modules/quickedit/js/models/BaseModel.js. */

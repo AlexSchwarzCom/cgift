@@ -1,0 +1,51 @@
+{%
+
+  set classes = [
+    'paragraph',
+    'design',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('alex_theme/textbild-css') }}
+{% set ausrichtung = content.field_ausrichtung|render %}
+{% set design = content.field_design|render %}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+  {% if design == 'Design1' %}
+  <div class="vector-background"></div>
+  {% endif %}
+  <div class="wrapper">
+  {% if design == 'Design1' %} <div class="video-absolute">  {% endif %}
+      <div class="flexbox-container">
+        {% block content %}
+
+        {% if ausrichtung == 'links' %}
+            <div class="video-column image-column-left">
+        {% endif %}
+        {% if ausrichtung == 'rechts' %}
+            <div class="video-column image-column-right">
+        {% endif %}
+
+        <div class="video-wrapper hovereffekt">
+        	<div class="play_btn"></div>
+    	    {{ content.field_video }}
+        </div>
+        <div class="video-caption">{{ content.field_caption }}</div>
+        </div>
+
+
+        {% if ausrichtung == 'links' %}
+            <div class="text-column text-column-right">
+        {% endif %}
+        {% if ausrichtung == 'rechts' %}
+            <div class="text-column text-column-left">
+        {% endif %}
+              {{ content.field_text }}</div>
+        {% endblock %}
+      </div>
+     </div>
+       {% if design == 'Design1' %}</div>{% endif %}
+</div>
+{% endblock paragraph %}
+<div class="clear"></div>

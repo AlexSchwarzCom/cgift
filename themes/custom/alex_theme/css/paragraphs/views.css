@@ -1,0 +1,85 @@
+
+.ratgeberview .rows {
+	position: relative;
+	width: 100%;
+	display: flex;
+	overflow: hidden;
+
+-webkit-flex-flow: row wrap;
+justify-content: flex-start;
+}
+
+.ratgeberview .views-row::before { 
+	content: "";
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 300px;
+	height: 200px;
+  background: url('../../images/backgrounds/muster_punkte.svg') no-repeat;
+   background-blend-mode: overlay;
+  background-size: 300px 200px;
+	}
+
+.ratgeberview .views-row {
+	position: relative;
+	min-width: calc(33% - 30px);
+	height: 420px;
+	background: #1779AD;
+	padding: 30px;
+	margin: 0px 30px 30px 0px;
+	grid-column-gap: 24px;
+grid-row-gap: 24px;
+transition: all 0.3s;
+}
+.ratgeberview .views-row:hover { 
+	background: #555!important;
+	}
+
+.ratgeberview .views-row:nth-child(2){
+	background: #20AEFA;
+}
+.ratgeberview .views-row:nth-child(3){
+	background: #1056C4;
+}
+
+.ratgeberview a, .ratgeberview small, .ratgeberview h3, .ratgeberview p{
+	color: #FFF;
+}
+
+.ratgeberview a {
+	margin-top: 30px; display: inline-block; border-bottom: 1px solid hsla(0,0%,100%,.7); padding-bottom: 2px;
+}
+
+.ratgeberview h3 {
+	margin: 10px 0px 10px 0px;
+}
+
+.ratgeberview .bereich {
+	color: hsla(0,0%,100%,.7); text-transform: uppercase;
+}
+
+.ratgeberview .inner-wrapper { position: absolute; bottom: 30px; width: calc(100% - 60px); }
+
+.paragraph--type--ansicht .wrapper-top {  overflow: hidden;}
+.paragraph--type--ansicht .wrapper-top h2 { float: left; }
+.paragraph--type--ansicht .wrapper-top .link { float: right; margin: 45px 50px 40px 0px; }
+.paragraph--type--ansicht .wrapper-top .link a { display: inline-block;}
+
+@media only screen and (max-width: 1023px) {
+.ratgeberview .views-row {
+	min-width: calc(33% - 20px);margin: 0px 20px 30px 0px;	height: 360px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.ratgeberview .rows { display: block; }
+.ratgeberview .views-row {
+	min-width: 100%; margin: 20px 0px; 	height: 300px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+.paragraph--type--ansicht .wrapper-top h2 { float: none; margin: 40px 0px 10px 0px; }
+.paragraph--type--ansicht .wrapper-top .link { float: none; margin: 0px 0px 10px 0px; }
+}

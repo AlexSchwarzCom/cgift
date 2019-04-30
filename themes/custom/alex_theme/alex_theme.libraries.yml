@@ -1,0 +1,88 @@
+basic:
+  version: 1.x
+  css:
+    theme:
+      css/basic-classes.css: {}
+      css/basic-grid.css: {}
+      css/layout.css: {}
+      css/navi.css: {}
+      css/animate.css: {}
+
+global-js:
+    js:
+      js/libs/jquery.easing.1.3.js: {}
+      js/libs/jquery.waypoints.min.js: {}
+      js/layout.js: {}
+      js/libs/viewportchecker.js: {}
+      js/libs/typed.min.js: {}
+      js/libs/SlickNav/jquery.slicknav.min.js: {}
+    dependencies:
+    - core/jquery
+    - core/jquery.ui.slider
+    - blazy/load
+
+textbild-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/text_bild.css: {}
+
+fullscreenbild-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/fullscreen_bild.css: {}
+
+gefaehrdungsmenue-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/gefaehrdungsmenue.css: {}
+
+dateitext-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/datei_text.css: {}
+
+kontaktformular-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/kontaktformular.css: {}
+
+kontaktbanner-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/kontaktbanner.css: {}
+
+teaser-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/teaser.css: {}
+
+map-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/map.css: {}
+
+akkordeon-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/akkordeon.css: {}
+
+views-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/views.css: {}
+
+akkordeon-js:
+  js:
+      js/libs/salvattore.min.js: {}
+      dependencies:
+      - core/jquery

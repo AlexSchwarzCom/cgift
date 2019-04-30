@@ -1,0 +1,13 @@
+#grid{position:relative;width:100%;}
+#grid[data-columns]:before{content:"3 .column.size-1of3";}
+#grid[data-columns]::before{content:'3 .column.size-1of3';}
+.size-1of3 .item{padding: 30px;}
+.page-node-3 .size-1of3 .item{padding: 0px 10px;}
+.size-1of3 .item a, .size-1of3 .item a img, .size-1of2 .item a, .size-1of2 .item a img{display:block;}
+.size-1of3{width:33.333%;overflow:hidden;margin-bottom:40px;}
+.size-1of2{width:50%;overflow:hidden;margin-bottom:12px;}
+.size-1of1{width:100%;overflow:hidden;margin-bottom:12px;}
+@media only screen and (max-width:480px){#grid[data-columns]::before{content:"1 .column.size-1of1";}
+}
+@media only screen and (min-width:481px){#grid[data-columns]::before{content:"3 .column.size-1of3";}
+}

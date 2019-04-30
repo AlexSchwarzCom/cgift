@@ -1,0 +1,151 @@
+/*******************************************/
+/*                                GRID                        */
+/*                                                                    */
+/*******************************************/
+
+/** Resetter
+/*********************************************************/
+ *{ margin: 0px; padding: 0px; }
+
+*:before, *:after {
+    box-sizing: border-box;
+        }
+* {
+    box-sizing: border-box;  }
+
+ /* Base Grid */
+
+.wrapper{
+    position: relative;
+    margin: 0px auto;
+    width: 90%;
+max-width: 1400px;
+ }
+ .block-webform-block.popup .wrapper{ margin: 0px; width: 100%; }
+
+.wrapper-small{
+    width: 60%;
+    max-width: 1024px;
+ }
+
+ .wrapper-big { width: 94%; max-width: 1800px; margin: 80px auto; }
+ .wrapper-grande{ width: 94%; max-width: 1600px; margin: 80px auto; }
+
+.path-frontpage .headerbild .wrapper{ width: 60%; padding: 40px 0px 60px 0px; }
+
+ .column{
+   position: relative;
+   float: left;
+ }
+
+
+  /** Mobile Groessen
+ ************************************************/
+
+  /* Einer */
+  .one{ width: 100%; }
+
+  /* Zweier */
+ .one-two{ width: 50%; }
+
+  /* Dreier */
+ .one-three{ width: 33.33%;  }
+ .two-three { width: 66.66%; }
+
+ /* Vierer */
+.one-four { width: 25%; }
+
+/* Fuenfer */
+.one-five { width: 20%; }
+
+.one-six { width: 14%; }
+
+
+/* Achter */
+.one-eight { width: 12.5%; }
+
+/* 30:70 */
+.one-thirds{ width: 32%; margin-right: 4%; }
+.two-thirds{ width: 64%; }
+
+/* 40:60*/
+.one-fourth{ width: 40%; }
+.two-fourth{ width: 60%; }
+
+/* links two-rows */
+.path-frontpage .paragraph--type--text .links.column{ width: 20%; }
+.path-frontpage .paragraph--type--text .two-rows{ width: 80%; }
+
+
+/* #Tablet (Portrait)
+================================================== */
+
+
+    @media only screen and (min-width: 1025px) and (max-width: 1200px) {
+
+            .one-four { width: 33.3334%; }
+             .one-six { width: 16%; }
+
+         }
+
+
+    @media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+        .one-four { width: 50%; }
+        .one-two, .one-three { width: 100%; padding-right: 0px; padding-left: 0px; }
+        .one-two.column, .one-three.column { float: none; }
+
+        .popup { width: 90%; }
+
+        /* Filter */
+        select, .js-form-type-textfield input{ width: 150px; }
+
+        .one-six { width: 16%; }
+
+    }
+
+/* Zwischengröße
+===================================================*/
+  @media only screen and (min-width: 481px) and (max-width: 768px) {
+              .one-six { width: 20%; }
+               }
+
+/* #Mobile (Landscape)
+================================================== */
+
+
+
+    @media only screen and (min-width: 0px) and (max-width: 768px) {
+
+        .one-four { width: 50%; }
+        .one-two, .one-three { width: 100%; padding-right: 0px; padding-left: 0px; }
+        .one-two.column, .one-three.column { float: none; }
+
+        /* Filter */
+        select, .js-form-type-textfield input{ width: 190px;  }
+
+    }
+
+
+
+/*  #Mobile (Portrait)
+================================================== */
+
+    /* Note: Design for a width of 320px */
+
+    @media only screen and (max-width: 480px) {
+
+
+        .column { float: none!important; }
+        .one-six { width: 46%; float: left!important; }
+
+        .one-two, .one-three, .one-four, .one-five, .one-eight, .popup { width: 90%; }
+
+        /* Filter */
+        select, .js-form-type-textfield input, input { width: 100%; float: none;  }
+
+    }
+
+
+
+/********************************************************************************************************************/

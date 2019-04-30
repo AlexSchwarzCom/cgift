@@ -1,0 +1,24 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+
+  <div class="headerbild-klein">
+  <div class="headerbild-over2"></div>
+  <div class="headerbild-over"></div>
+	    {% if paragraph.field_headline_zeile_1.value is not empty %}
+	  			 <h1><span class="small-headline">{{ content.field_headline_zeile_1 }}</span>
+           <span class="big-headline">{{ content.field_headline_zeile_2 }}</span></h1>
+	  {% endif %}
+  </div>
+
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+      {{ content.field_bildauswahl }}
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

@@ -1,0 +1,21 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+{{ attach_library('alex_theme/gefaehrdungsmenue-css') }}
+  <div class="{{ content.field_mit_background }}-background-menu">
+  <div{{ attributes.addClass(classes) }}>
+  <div class="wrapper">
+    {% block content %}   
+      {{ content.field_headline_h2 }}  
+      {{ drupal_menu('gefaehrdungsgrade') }} 
+    {% endblock %}
+  </div>
+ </div>
+  </div>
+<div class="clear"></div>
+{% endblock paragraph %}

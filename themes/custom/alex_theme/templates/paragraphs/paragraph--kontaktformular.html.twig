@@ -1,0 +1,18 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('alex_theme/kontaktformular-css') }}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+  	<div class="wrapper">
+  	  {% block content %}
+		{{ content }}
+    {% endblock %}
+    </div>
+{% endblock paragraph %}
+</div>
+<div class="clear"></div>

@@ -1,0 +1,21 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+  <div class="wrapper">
+    <div class="text-center quote">
+	      <div class="quote-icon">{{ content.field_icon }}</div>
+	      <div class="quote-text">{{ content.field_text }}</div>
+	      <div class="quote-author">{{ content.field_author }}</div>
+     </div>
+    </div>
+     <div class="clear"></div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

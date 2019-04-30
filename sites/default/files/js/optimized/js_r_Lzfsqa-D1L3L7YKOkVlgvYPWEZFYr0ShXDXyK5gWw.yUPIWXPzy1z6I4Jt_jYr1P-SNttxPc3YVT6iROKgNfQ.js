@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/core/modules/contextual/js/views/KeyboardView.js. */
+(function(t,i){t.contextual.KeyboardView=i.View.extend({events:{'focus .trigger':'focus','focus .contextual-links a':'focus','blur .trigger':function(){this.model.blur()},'blur .contextual-links a':function(){var t=this;this.timer=window.setTimeout(function(){t.model.close().blur()},150)}},initialize:function(){this.timer=NaN},focus:function(){window.clearTimeout(this.timer);this.model.focus()}})})(Drupal,Backbone);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/core/modules/contextual/js/views/KeyboardView.js. */

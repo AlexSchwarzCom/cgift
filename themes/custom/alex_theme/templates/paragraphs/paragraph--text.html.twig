@@ -1,0 +1,16 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% set headline = content.field_headline_h2|render %}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+    {% if headline %}{{ content.field_headline_h2 }}{% endif %}
+    <div class="text">{{ content.field_text }}</div>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

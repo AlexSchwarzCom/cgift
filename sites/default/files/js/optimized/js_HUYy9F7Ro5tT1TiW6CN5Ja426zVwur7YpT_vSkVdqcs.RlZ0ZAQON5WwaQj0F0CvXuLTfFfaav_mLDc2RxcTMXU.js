@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/core/modules/filter/filter.js. */
+(function(e,i){i.behaviors.filterGuidelines={attach:function(i){function t(i){var t=e(i.target),l=t.val();t.closest('.filter-wrapper').find('.filter-guidelines-item').hide().filter('.filter-guidelines-'+l).show()};e(i).find('.filter-guidelines').once('filter-guidelines').find(':header').hide().closest('.filter-wrapper').find('select.filter-list').on('change.filterGuidelines',t).trigger('change.filterGuidelines')}}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/core/modules/filter/filter.js. */

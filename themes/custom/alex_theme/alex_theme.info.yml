@@ -1,0 +1,24 @@
+name: Alex_theme
+description: A professional custom Theme developed by alex-schwarz.com
+type: theme
+core: 8.x
+
+regions:
+  popups: 'popups'
+  hauptmenue: 'Hauptmenü'
+  header: Header
+  header1: 'Header 1'
+  header2: 'Header 2'
+  header3: 'Header 3'
+  content: Content
+  footertop: 'Footer Top'
+  footer:  'Footer'
+  footer1: 'Footer 1'
+  footer2: 'Footer 2'
+  footer3: 'Footer 3'
+  firmenname: 'Firmenname'
+  agbmenue: 'AGB - Menü'
+
+libraries:
+  - alex_theme/basic
+  - alex_theme/global-js

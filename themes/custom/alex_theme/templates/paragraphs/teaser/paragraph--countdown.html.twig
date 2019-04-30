@@ -1,0 +1,19 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div class="one-three column">
+    <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+     <div class="counter_icon icon-180">{{ content.field_bild_referenz }}</div>
+     <div class="counter_prename">{{ content.field_name_vor_zahl }}</div>
+     <div class="counter">{{ content.field_zahl }}</div>
+     <div class="counter_name">{{ content.field_name }}</div>
+    {% endblock %}
+  </div>
+ </div>
+{% endblock paragraph %}

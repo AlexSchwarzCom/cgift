@@ -1,0 +1,276 @@
+/***Basis-Anweisungen
+********************************************/
+
+
+/** Schriften einbinden
+/*********************************************************/
+
+
+@font-face { font-family: 'Assistant-ExtraBold'; font-display: auto; src: url('fonts/Assistant/Assistant-ExtraBold.ttf') format('truetype'); }
+@font-face { font-family: 'Assistant-Bold'; font-display: auto; src: url('fonts/Assistant/Assistant-Bold.ttf') format('truetype'); }
+@font-face { font-family: 'Assistant-SemiBold'; font-display: auto; src: url('fonts/Assistant/Assistant-SemiBold.ttf') format('truetype'); }
+@font-face { font-family: 'Assistant-Regular'; font-display: auto; src: url('fonts/Assistant/Assistant-Regular.ttf') format('truetype'); }
+@font-face { font-family: 'Assistant-Light'; font-display: auto; src: url('fonts/Assistant/Assistant-Light.ttf') format('truetype'); }
+
+ /* a-Behavior */
+ a{
+  text-decoration: none; outline: none; color: #1778AD;
+ }
+a:hover { color: #7fd135; cursor: pointer!important; }
+
+ /* img-Behavior */
+ img { display: block; width: 100%; height: auto; }
+ a img{ border: none; }
+
+ /* Listen */
+/* Bullets von Listen weg */
+ ul, ul li.leaf{  list-style-image: none; list-style-type: none;}
+
+/*Listen im textfeld */
+ .textfeld li, .text li{ line-height: 2; margin-bottom: 8px; }
+ .textfeld ol, .text ol{ padding-left: 12px; margin: 20px 0px; }
+
+ /* .text li bullets geben */
+ .text li{ position: relative; padding-left: 22px; }
+ .text li::before {
+     content: "";
+     position: absolute;
+     top: 12px;
+     left: 0px;
+     width: 8px;
+     height: 8px;
+     background: #262861;
+   }
+
+ .textfeld ul em{ padding: 40px 0px; }
+
+
+
+/* Tabelle */
+table, caption, tbody, tfoot, thead, tr {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    width: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* BODY    color: #597a96; */
+body {
+font-weight: normal;
+font-size: 1.4em;
+font-family: "Assistant-Regular", Helvetica, Arial, sans-serif;
+line-height: 1.2em;
+color: #9ca4a9;
+background: #2e3133;
+-moz-osx-font-smoothing: grayscale;
+-moz-font-feature-settings: "liga", "kern";
+text-rendering: optimizelegibility;
+}
+
+strong {
+	font-family: 'Assistant-SemiBold'; text-transform: uppercase; color: #cecfcf; font-weight: normal; margin-top: 40px; font-size: 1.05em; line-height: 1.21em;
+}
+
+/* Paragraph */
+p, li{ margin-bottom: 22px; font-weight: normal; }
+p { overflow: hidden; }
+p a {  display: inline-block;  }
+
+/* Footer Alter Stick */
+main, body{ position: relative; height: 100%; width: 100%; margin: 0; }
+main { margin-top: 110px; }
+.paragraph { margin: 50px 0px; }
+@media only screen and (min-width: 1921px) {
+  .paragraph { margin: 60px 0px; }
+}
+main .paragraph:first-child { margin: 0px 0px 50px 0px; }
+
+.mit-background { background: #f4f4f4; padding: 40px 0px; }
+.fullscreen { margin: 20px 0px; }
+.viewsreference--view-title { display: none; }
+
+/* Ueberschriften */
+h1 { font-family: "Assistant-ExtraBold"; font-size: 3.5em; line-height: 1em; font-weight: normal; margin-bottom: 70px; color: #fad151; }
+
+/* H2  color: #737f8d; */
+h2{ letter-spacing: 0.005em; font-size: 1.8em; line-height: 1.4em; font-weight: normal;
+ margin: 40px 0px 40px 0px; font-family: "Assistant-Bold"; color: #FFF; }
+
+/* H3 */
+h3 { font-weight: normal; font-size: 1.1em;  margin: 40px 0px 10px 0px; font-family: "Assistant-Regular"; color: #FFF;}
+
+h4 { font-size: 1em; margin: 12px 0px 0px 0px; font-family: "Assistant-Bold"; font-weight: normal;  }
+small { font-size: 0.8em; }
+
+
+ @media only screen and (min-width: 0px) and (max-width: 768px) {
+   h1 { font-size: 1.6em;  }
+   h2 { font-size: 1.5em; margin: 32px 0px 20px 0px; }
+    }
+
+ @media only screen and (min-width: 0px) and (max-width: 480px) {
+    h1 { font-size: 1.4em; }
+    h2 { font-size: 1.3em; }
+  }
+
+.text.einspaltig h2, .text.einspaltig h3, .text.einspaltig p { max-width: 1144px; }
+.text.einspaltig h2.text-align-center, .text.einspaltig h3.text-align-center, .text.einspaltig p.text-align-center { max-width: 100%; }
+.mit-background .text.einspaltig ul { max-width: 800px;  }
+/* Tabellen */
+ table {
+    animation: 5s ease 0s normal none infinite running float;
+    background: white;
+    border-collapse: collapse;
+    border-radius: 3px;
+    height: 320px;
+    max-width: 600px;
+    padding: 5px;
+    width: 100%;
+    margin: 30px 0px;
+ }
+
+ tr:last-child {
+    border-bottom: medium none;
+}
+tr:first-child {
+    border-top: medium none;
+}
+tr {
+    border-top: 1px solid #c1c3d1;
+    color: #666b85;
+    font-size: 16px;
+    font-weight: normal;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.1);
+}
+
+th.text-left {
+    text-align: left;
+}
+th:first-child {
+    border-top-left-radius: 3px;
+}
+th {
+    background: #1b1e24 none repeat scroll 0 0;
+    border-bottom: 4px solid #9ea7af;
+    border-right: 1px solid #343a45;
+    color: #d5dde5;
+    font-size: 1em;
+    font-weight: 100;
+    padding: 8px 24px;
+    text-align: left;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+/*tr:nth-child(2n+1) td {
+    background: #ebebeb none repeat scroll 0 0;
+}*/
+td.text-left {
+    text-align: left;
+}
+td {
+    background: #ffffff none repeat scroll 0 0;
+    border-right: 1px solid #c1c3d1;
+    font-size: 18px;
+    font-weight: 300;
+    padding: 8px 20px;
+    text-align: left;
+    text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+ /* Allgemeine Seitenelemente */
+
+ #block-alex-theme-page-title, .view-popup, .tooltip-content { display: none; }
+
+/* Klassen */
+.link-absolute { display: block; width: 100%; height: 100%; z-index: 4; top: 0px; left: 0px; position: absolute; border: none!important; }
+
+/* Clearer */
+ .clear { clear: both; padding: 0px; height: 0px; width: 100%;  margin: 0px; padding: 0px; line-height: 0px; visibility: hidden; }
+
+
+ button { padding: 10px 30px; color: #FFF; background: gray; font-size: 1.2em; }
+
+/* Textfeld */
+.textfeld{ padding: 60px 0px; }
+
+.accordeon_content { display: none; }
+
+/* Hintergrund */
+.background-black{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  z-index: 90;
+  display: none;
+}
+
+/* ANIMATIONEN */
+/* Drehungen */
+.rotate{ transition: all 0.3s; }
+.rotate:hover img{ transform: rotate(2deg); }
+
+/* fuer die Post-Animation */
+.post.hidden{  opacity:0;  display: block; }
+.post.visible{  opacity:1; }
+
+/***************** Drupal *******************************/
+
+#block-alex-theme-local-tasks.contextual-region{
+  position: absolute; right: 0px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+#block-alex-theme-local-tasks.contextual-region a{ color: #fff; }
+#block-alex-theme-local-tasks.contextual-region ul.contextual-links a{ color: #354c54; }
+
+
+
+/** User-Login
+ /*******************************************************/
+
+ .path-user main{ padding-top: 50px; padding-bottom: 10px; }
+ .layout-container{ position: relative; }
+
+ #user-login-form, .user-logged-in.path-user .js-form-item,#user-register-form, #user-pass, .path-user #block-alex-theme-local-tasks{
+    border: medium none;
+    margin: 0px auto 40px auto;
+    max-width: 900px;
+    padding: 30px;
+    width: 55%;
+ }
+
+.user-logged-in.path-user #block-alex-theme-local-tasks{ margin: 0px; padding: 20px; width: auto;/* max-width: auto;*/ }
+
+ #user-login-form input{
+    border: 2px solid #000;
+    color: #3c4552;
+    font-family: "Open Sans",serif;
+    font-size: 1.2em;
+    margin: 8px 0;
+    padding: 2% 3%;
+    width: 94%;
+ }
+
+ #user-login-form input.form-submit { width: 94%; background: rgba(53,76,84,0.6);  }
+
+ #user-profile-form { padding: 10px 0px; }
+
+ .page-user.logged-in  .user-picture { margin: 0px auto; float: none; width: 200px; }
+  @media only screen and (max-width: 1023px) {
+  body { font-size: 90%;}
+}
+
+@media screen and (max-width: 769px) {
+  .paragraph {
+      margin: 30px 0px;
+  }
+}

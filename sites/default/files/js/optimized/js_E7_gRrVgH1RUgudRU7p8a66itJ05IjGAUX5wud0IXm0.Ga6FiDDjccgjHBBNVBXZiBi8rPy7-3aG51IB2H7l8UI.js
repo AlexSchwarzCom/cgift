@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/core/modules/contextual/js/views/RegionView.js. */
+(function(e,t,n){e.contextual.RegionView=t.View.extend({events:function(){var e={mouseenter:function(){this.model.set('regionIsHovered',!0)},mouseleave:function(){this.model.close().blur().set('regionIsHovered',!1)}};if(n.touchevents){e={}};return e},initialize:function(){this.listenTo(this.model,'change:hasFocus',this.render)},render:function(){this.$el.toggleClass('focus',this.model.get('hasFocus'));return this}})})(Drupal,Backbone,Modernizr);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/core/modules/contextual/js/views/RegionView.js. */

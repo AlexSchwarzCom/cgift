@@ -1,0 +1,26 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('alex_theme/teaserbereich-css') }}
+{% set design = content.field_design|render %}
+{% block paragraph %}
+{% if design == 'Design1' %}<div class="design1">{% endif %}
+{% if design == 'Design2' %}<div class="design2">{% endif %}
+{% if design == 'Design3' %}<div class="design3">{% endif %}
+    <div{{ attributes.addClass(classes) }}>
+      <div class="wrapper">
+    {% block content %}
+    <h2>{{ content.field_headline_h2 }}</h2>
+     <div class="teaser-wrapper">{{ content.field_teaser }}</div>
+    {% endblock %}
+  </div>
+ </div>
+{% endblock paragraph %}
+{% if design == 'Design1' %}</div>{% endif %}
+{% if design == 'Design2' %}</div>{% endif %}
+{% if design == 'Design3' %}</div>{% endif %}
+<div class="clear"></div>

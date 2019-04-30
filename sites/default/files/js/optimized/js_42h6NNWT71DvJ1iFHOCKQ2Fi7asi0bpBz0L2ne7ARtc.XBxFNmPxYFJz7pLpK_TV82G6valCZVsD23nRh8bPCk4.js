@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/core/modules/history/js/mark-as-read.js. */
+(function(s,t,o){s.addEventListener('load',function(){if(o.history&&o.history.nodesToMarkAsRead){Object.keys(o.history.nodesToMarkAsRead).forEach(t.history.markAsRead)}})})(window,Drupal,drupalSettings);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/core/modules/history/js/mark-as-read.js. */

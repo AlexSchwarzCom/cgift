@@ -1,0 +1,33 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+<div class="wrapper">
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+    <h2>{{ field_subline }}</h2>
+      <div class="one-three column">
+      	<div class="innerbox">
+            <div class="image">{{ content.field_image }}</div>
+      	    <div class="image-caption">{{ content.field_image_caption }}</div>
+      	 </div>
+      </div>
+      <div class="one-three column">
+      		<div class="innerbox">
+      			{{ content.field_text }}
+      		</div>
+      </div>
+      <div class="one-three column">
+      		<div class="innerbox">
+      			{{ content.field_text_2 }}
+      		</div>
+      </div>
+      <div class="clear"></div>
+    {% endblock %}
+  </div>
+</div>
+{% endblock paragraph %}

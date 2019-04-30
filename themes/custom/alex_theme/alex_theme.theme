@@ -1,0 +1,41 @@
+<?php
+
+ function alex_theme_preprocess_node(&$variables) {
+
+  $variables['testviewblock'] = views_embed_view('testview', 'testviewblock');
+
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $language;
+
+  $variables['base_path'] = base_path();
+
+  $variables['logopath'] = '' . drupal_get_path('theme','alex_theme') . '/images/logo/logo_alex.svg';
+  $variables['imagespath'] = '' . drupal_get_path('theme','alex_theme') . '/images';
+}
+
+function alex_theme_preprocess_html(&$variables) {
+   if ($node = \Drupal::request()->attributes->get('node')) {
+     $variables['attributes']['class'][] = 'page-node-' . $node->id();
+     $variables['node_id_raw'] = $node->id();
+   }
+ }
+
+ function alex_theme_preprocess_paragraph(&$variables) {
+      $variables['autodata'] = views_embed_view('angebote', 'autodata');
+  }
+
+ function alex_theme_preprocess_field(&$variables) {
+  $variables['base_path'] = base_path();
+  $variables['imagespath'] = '' . drupal_get_path('theme','alex_theme') . '/images';
+ }
+
+function alex_theme_preprocess_page(&$variables) {
+  $variables['imagespath'] = '' . drupal_get_path('theme','alex_theme') . '/images';
+  $language = \Drupal::languageManager()->getCurrentLanguage()->getId();
+  $variables['language'] = $language;
+
+}
+
+function alex_theme_page_attachments_alter(array &$attachments) {
+  $attachments['#attached']['library'][] = 'blazy/load';
+}

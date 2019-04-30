@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/modules/webform/js/webform.dialog.js. */
+(function(t,o){'use strict';var r=t.ui.dialog.prototype._allowInteraction;t.ui.dialog.prototype._allowInteraction=function(o){if(t(o.target).closest('.cke_dialog').length){return!0};return r.apply(this,arguments)}})(jQuery,Drupal);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/modules/webform/js/webform.dialog.js. */

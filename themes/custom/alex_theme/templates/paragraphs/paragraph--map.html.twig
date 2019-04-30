@@ -1,0 +1,29 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{{ attach_library('alex_theme/map-css') }}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
+         <div id="mapid"></div>
+      <style>#mapid { height: 300px; width: 100%; }</style>
+      <script>var mymap = L.map('mapid').setView([53.653151, 9.984440], 14);
+      L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    maxZoom: 18,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoiYWxleC1zY2h3YXJ6IiwiYSI6ImZmMmM1Mzc4NTIzYzI3ZmRhODgzY2RiZDdkMjJiZGQ0In0.7EBPGlBX-IGen87DglD2Cw'
+}).addTo(mymap);
+mymap.scrollWheelZoom.disable();
+    var marker = L.marker([53.653151, 9.984440]).addTo(mymap);
+    marker.bindPopup("48special<br />Südportal 3, 22848 Norderstedt<br /><a href='mailto:kontakt@48special.de'>kontakt@48special.de</a><br />(+49) 040 - 466 668 - 112")
+</script>
+    {% endblock %}
+  </div>
+{% endblock paragraph %}

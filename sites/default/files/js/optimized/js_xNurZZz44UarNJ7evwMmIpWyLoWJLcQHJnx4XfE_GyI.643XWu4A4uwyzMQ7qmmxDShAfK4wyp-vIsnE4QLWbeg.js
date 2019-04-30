@@ -1,0 +1,3 @@
+/* Source and licensing information for the line(s) below can be found at http://localhost:8888/48specials/core/modules/quickedit/js/models/AppModel.js. */
+(function(l,e){e.quickedit.AppModel=l.Model.extend({defaults:{highlightedField:null,activeField:null,activeModal:null}})})(Backbone,Drupal);
+/* Source and licensing information for the above line(s) can be found at http://localhost:8888/48specials/core/modules/quickedit/js/models/AppModel.js. */
