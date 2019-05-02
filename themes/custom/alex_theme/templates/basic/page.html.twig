@@ -111,21 +111,33 @@
     	  </a>
   		</div>
 
-         	<div class="footer1">
-          <img src="{{ base_path }}{{ directory }}/images/icons/CGift-Standort.Footer.svg" alt="Startseite" />
-           	<div class="footer-kontakt">{{ page.footer }}</di
-          </div>
+		<div class="flexbox-container">
+	         	<div class="footer1">
+	          		<img src="{{ base_path }}{{ directory }}/images/icons/CGift-Standort.Footer.svg" alt="Startseite" />
+	           </div>
+	           
+	           	<div class="footer-kontakt">{{ page.footer }}</div>
+	
+	         	
+	         	{% if is_front %}
+	         	
+	         	{{ attach_library('alex_theme/kontaktformular-css') }}
+	         	{{ page.footer3 }}
+	         	
+	            {% else %}
+	         	
+	         	<div class="footer2 flexbox-container">
+		            <img src="{{ base_path }}{{ directory }}/images/icons/app-icon-apple.svg" alt="Startseite" />
+		            <img src="{{ base_path }}{{ directory }}/images/icons/app-icon-android.svg" alt="Startseite" />
+		            <p>Jetzt kostenlos unsere<br />CGift App downloaden</p>
+	          	</div>
+	          
+	          {% endif %}
+	          
+		   </div>
 
-
-         	<div class="footer2">
-            <img src="{{ base_path }}{{ directory }}/images/icons/app-icon-apple.svg" alt="Startseite" />
-            <img src="{{ base_path }}{{ directory }}/images/icons/app-icon-android.svg" alt="Startseite" />
-            <p>Jetzt kostenlos unsere<br />CGift App downloaden</p>
-          </div>
-
-
-            <div class="clear"></div>
-
+		 
+            <div class="clear"></div>          
          	    <div class="footer-bottom">
                 <div class="bottom-nav column">{{ page.agbmenue }}</div>
                 <div class="copy column"><span>&copy; {{ "now"|date("Y") }}</span> {{ page.firmenname }}</span> Webdesign by <a href="geschmackslabor.de" target="_blank">geschmackslabor.de</a></div>

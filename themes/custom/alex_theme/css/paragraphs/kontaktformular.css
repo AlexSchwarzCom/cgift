@@ -9,6 +9,9 @@
 .form-container .button:hover { cursor: pointer; background: #7fd135; border: 1px solid #7fd135; color: #FFF; }
 .form-container label { display: block; margin-bottom: 4px; }
 
+.path-frontpage .form-container input, .path-frontpage .form-container select, .path-frontpage .form-container textarea { border-bottom: 1px solid #1f2223; color: #1f2223; }
+.path-frontpage #edit-actions-submit { background: #1f2223; color: #FFF; }
+
 #edit-terms-of-service-dsgvo { float: left; margin-right: 10px; margin-top: 20px;  }
 .form-type-webform-terms-of-service label { float: left; display: inline-block; font-size: 0.9em; margin-top:17px; }
 #edit-actions { float: right; }

@@ -8,12 +8,12 @@
 {{ attach_library('alex_theme/teaser-css') }}
 {% block paragraph %}
     <div{{ attributes.addClass(classes) }}>
+    <a class="link-absolute" href="{{ content.field_link }}"></a>
     {% block content %}
     {{ content.field_gelbe_subline }}
     {{ content.field_headline_h2 }}
      <div class="teaser_bild">
      {{ content.field_image }}
-       <a href="{{ content.field_link[0]['#url']  }}" class="absolute"> </a>
     </div>
     {% endblock %}
   </div>

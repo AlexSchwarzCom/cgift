@@ -21,6 +21,10 @@
     width: 90%;
 max-width: 1400px;
  }
+ 
+.paragraph--type--_er-bereich .paragraph--type--_er-bereich .wrapper {
+	width: 100%!important; max-width: 100%!important;
+} 
  .block-webform-block.popup .wrapper{ margin: 0px; width: 100%; }
 
 .wrapper-small{

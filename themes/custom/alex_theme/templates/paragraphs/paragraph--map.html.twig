@@ -12,8 +12,8 @@
         <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"></script>
          <div id="mapid"></div>
-      <style>#mapid { height: 300px; width: 100%; }</style>
-      <script>var mymap = L.map('mapid').setView([53.653151, 9.984440], 14);
+      <style>#mapid { height: 400px; width: 100%; }</style>
+      <script>var mymap = L.map('mapid').setView([53.548863, 9.998841], 14);
       L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
     maxZoom: 18,
@@ -21,8 +21,8 @@
     accessToken: 'pk.eyJ1IjoiYWxleC1zY2h3YXJ6IiwiYSI6ImZmMmM1Mzc4NTIzYzI3ZmRhODgzY2RiZDdkMjJiZGQ0In0.7EBPGlBX-IGen87DglD2Cw'
 }).addTo(mymap);
 mymap.scrollWheelZoom.disable();
-    var marker = L.marker([53.653151, 9.984440]).addTo(mymap);
-    marker.bindPopup("48special<br />Südportal 3, 22848 Norderstedt<br /><a href='mailto:kontakt@48special.de'>kontakt@48special.de</a><br />(+49) 040 - 466 668 - 112")
+    var marker = L.marker([53.548863, 9.998841]).addTo(mymap);
+    marker.bindPopup("CGift<br />Schoppenstehl 22, 20095 Hamburg<br /><a href='mailto:info@cgift.io'>info@cgift.io</a><br />+49 40 679 580-53")
 </script>
     {% endblock %}
   </div>

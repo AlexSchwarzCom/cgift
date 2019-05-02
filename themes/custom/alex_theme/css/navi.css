@@ -5,7 +5,7 @@
 /* Logo
 ********************************************/
 .logo{ float: left; display: block; width: 240px; height: auto; margin-top: 0px; margin-bottom: 10px; }
-.logo.logo_mobil { top: 0px; left: 0px; width: 80px; }
+.logo.logo_mobil { position: absolute; top: 0px; left: 0px; width: 80px; }
 
 
 /* Haupt NAVIGATION
@@ -25,7 +25,7 @@
 
 /* Untermenu Parent-Link */
 
-.main-menus-links a { font-family: 'Assistant-Bold'; color: #fad151; text-transform: uppercase;  }
+.main-menus-links ul.sf-menu a { font-family: 'Assistant-Bold'; color: #fad151; text-transform: uppercase; padding: 20px 0px 10px 30px; font-size: 1em; }
 .main-menus-links a:hover, .main-menus-links a.is-active { color: #FFF; text-decoration: none; }
 
 
