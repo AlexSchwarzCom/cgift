@@ -25,8 +25,8 @@
 
 /* Untermenu Parent-Link */
 
-.main-menus-links ul.sf-menu a { font-family: 'Assistant-Bold'; color: #fad151; text-transform: uppercase; padding: 20px 0px 10px 30px; font-size: 1em; }
-.main-menus-links a:hover, .main-menus-links a.is-active { color: #FFF; text-decoration: none; }
+.main-menus-links ul.sf-menu a { font-family: 'Assistant-Bold'; color: #fad151; text-transform: uppercase; padding: 20px 0px 10px 30px; font-size: 1em; transition: all 0.3s; }
+.main-menus-links ul.sf-menu a:hover, .main-menus-links a.is-active { color: #FFF; }
 
 
  /* Footer Menu */

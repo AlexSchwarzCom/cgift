@@ -86,8 +86,6 @@ main { margin-top: 110px; }
 
 .paragraph { margin: 50px 0px; }
 
-main .paragraph:first-child { margin: 0px 0px 50px 0px; }
-
 .mit-background { background: #f4f4f4; padding: 40px 0px; }
 .fullscreen { margin: 20px 0px; }
 .viewsreference--view-title { display: none; }
