@@ -1,0 +1,32 @@
+{%
+  set classes = [
+    'paragraph',
+    'paragraph--type--' ~ paragraph.bundle|clean_class,
+    view_mode ? 'paragraph--view-mode--' ~ view_mode|clean_class,
+  ]
+%}
+{% block paragraph %}
+  <div{{ attributes.addClass(classes) }}>
+    {% block content %}          
+
+<div id="parallax-wrapper"> 
+	<div class="wrapper"><div class="parallax-headline">{{ content.field_caption }}</div></div>
+<div id="parallax">      
+<div id="scene">
+
+	{% if content.field_layer1 %}<div class="layer layer-1" data-depth="0.6"><img class="at2x" src="{{ content.field_layer1 }}" alt=""></div>{% endif %}
+	{% if content.field_layer2 %}<div class="layer layer-2" data-depth="0.8"><img class="at2x" src="{{ content.field_layer2 }}" alt=""></div>{% endif %}
+	{% if content.field_layer3 %}<div class="layer layer-3" data-depth="0.7"><img class="at2x" src="{{ content.field_layer3 }}" alt=""></div>{% endif %}
+	{% if content.field_layer4 %}<div class="layer layer-4" data-depth="0.9"><img class="at2x" src="{{ content.field_layer4 }}" alt=""></div>{% endif %}
+	{% if content.field_layer5 %}<div class="layer layer-5" data-depth="0.95"><img class="at2x" src="{{ content.field_layer5 }}" alt=""></div>{% endif %}
+	
+</div>    
+</div> 
+</div>    
+         
+    {% endblock %}
+ </div>
+{% endblock paragraph %}
+
+{{ attach_library('alex_theme/jqueryparallax-css') }}
+{{ attach_library('alex_theme/jqueryparallax-js') }}

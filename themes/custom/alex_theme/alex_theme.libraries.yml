@@ -87,3 +87,15 @@ akkordeon-js:
       js/libs/salvattore.min.js: {}
       dependencies:
       - core/jquery
+ 
+jqueryparallax-css:
+  version: 1.x
+  css:
+    theme:
+      css/paragraphs/jqueryparallax.css: {}
+            
+jqueryparallax-js:
+  js:
+      js/libs/jquery.parallax.js: {}
+      dependencies:
+      - core/jquery
