@@ -200,7 +200,6 @@ background: inherit;
  	margin-top: 230px!important; 
  	}
   
-
 @media only screen and (max-width: 789px) {
    .flexbox-container { display: block; }
    .paragraph--type--_er-bereich .flexbox-container .column1, .paragraph--type--_er-bereich .flexbox-container .column2 { width: 100%; }
@@ -339,8 +338,23 @@ footer { font-size: 80%;}
 }
 
 
-@media only screen and (min-width: 481px) and (max-width: 790px) {
+@media only screen and (max-width: 790px) {
 
+ .paragraph--type--_er-bereich .flexbox-container .column1, .paragraph--type--_er-bereich .flexbox-container .column2 {
+  width: 100%;
+ }
+ 
+.path-frontpage .paragraph--type--_er-bereich .flexbox-container .column1, .path-frontpage .paragraph--type--_er-bereich .flexbox-container .column2 {
+  width: 100%;
+ }
+ 
+ .path-frontpage .footer {
+    margin-top: 190px!important;
+}
+
+footer::before  {
+	height: 60%;
+}
 
 }
 

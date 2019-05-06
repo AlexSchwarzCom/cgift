@@ -3,18 +3,29 @@
 	position: relative; float: left; width: 100%; border: none; overflow: hidden; clear: both;
 }
 
-.form-container input, .form-container select { background: transparent; border-bottom: 1px solid #f4f4f4; width: 90%; padding: 12px 0px; margin-bottom: 12px; color: #737F8C; }
-.form-container textarea { background: transparent;  border-bottom: 1px solid #f4f4f4;  padding: 12px 0px; margin-bottom: 10px; color: #737F8C; width: 100%; }
-.form-container .button { border-radius: 0px; background: #FFF; background: #f4f4f4; border: 1px solid #1778AD; color: #1778AD; text-transform: uppercase; font-size: 1.1em; }
+.form-container input, .form-container select { background: transparent; border-bottom: 1px solid #f4f4f4; opacity: 1; width: 90%; padding: 12px 0px; margin-bottom: 12px; color: #FFF; }
+.form-container textarea { background: transparent;  border-bottom: 1px solid #f4f4f4;  padding: 12px 0px; margin-bottom: 10px; color: #1f2223; width: 100%; color: #FFF; }
 .form-container .button:hover { cursor: pointer; background: #7fd135; border: 1px solid #7fd135; color: #FFF; }
 .form-container label { display: block; margin-bottom: 4px; }
 
-.path-frontpage .form-container input, .path-frontpage .form-container select, .path-frontpage .form-container textarea { border-bottom: 1px solid #1f2223; color: #1f2223; }
-.path-frontpage #edit-actions-submit { background: #1f2223; color: #FFF; }
+input::placeholder, textarea::placeholder { opacity:1; }
+
+#front-webform .form-container input, .path-frontpage .form-container select, .path-frontpage .form-container textarea { border-bottom: 1px solid #1f2223; color: #1f2223; opacity:1; }
+#front-webform #edit-actions-submit { background: #1f2223; color: #FFF; }
+#front-webform .form-item-message { width: 100%; }
+#front-webform .form-item-firma { display: none; }
+#front-webform .fieldset-wrapper .form-item-name, .path-frontpage .fieldset-wrapper .form-item-email { width: 48%; float: left; }
+#front-webform #edit-kundendaten .fieldset-wrapper { 
+display: flex; flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+#front-webform .form-container fieldset { float: none; clear: none; }
+#front-webform h3 { margin: 0px 0px 40px 0px; color: #1f2223; font-family: 'Assistant-Bold'; }
 
 #edit-terms-of-service-dsgvo { float: left; margin-right: 10px; margin-top: 20px;  }
 .form-type-webform-terms-of-service label { float: left; display: inline-block; font-size: 0.9em; margin-top:17px; }
-#edit-actions { float: right; }
+#edit-actions { float: right; margin-left: 6px; }
 #edit-actions input { background: #fad151; margin-top: 20px; border: none; border-radius: 360px; padding: 16px 36px; font-size: 0.9em; }
 
  /* ----------------------------------------------------------------------------------------------------
@@ -186,7 +197,7 @@ select[multiple]
 
 @media only screen and (max-width: 790px) {
 
-.form-container fieldset {
+.form-container fieldset, #front-webform .fieldset-wrapper .form-item-name, .path-frontpage .fieldset-wrapper .form-item-email {
 	float: none; width: 100%; border: none; overflow: hidden;
 }
 

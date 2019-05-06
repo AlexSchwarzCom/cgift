@@ -121,8 +121,10 @@
 	         	
 	         	{% if is_front %}
 	         	
-	         	{{ attach_library('alex_theme/kontaktformular-css') }}
+	         	<div id="front-webform" class="footer2">{{ attach_library('alex_theme/kontaktformular-css') }}
+	         	<h3>{% trans %}Jetzt kostenlose Erstberatung vereinbaren{% endtrans %}</h3>
 	         	{{ page.footer3 }}
+	         	</div>
 	         	
 	            {% else %}
 	         	

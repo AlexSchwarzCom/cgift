@@ -10,6 +10,20 @@
   transition: all 0.3s; }
 .paragraph--type--teaser:hover .teaser_bild { width: 257px; cursor: pointer; }
 
+.path-frontpage .page-body:nth-child(2) .column1 .paragraph--type--teaser { 
+	background: #1f2223;
+	 }
+	 
+	.path-frontpage .page-body:nth-child(2) .column1 .paragraph--type--_er-bereich .column1 .paragraph--type--teaser  {
+		background: #7d8489;
+	}
+	.path-frontpage .page-body:nth-child(2) .column1 .paragraph--type--_er-bereich .column2 .paragraph--type--teaser  {
+		background: #fad151; color: #1f2223;
+	}
+	.path-frontpage .page-body:nth-child(2) .column1 .paragraph--type--_er-bereich .column2 .paragraph--type--teaser h2 {
+		color: #1f2223;
+	}
+
 @media only screen and (max-width: 1024px) {
 
 }
