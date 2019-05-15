@@ -26,14 +26,13 @@
 /* Untermenu Parent-Link */
 
 .main-menus-links ul.sf-menu a { font-family: 'Assistant-Bold'; color: #fad151; text-transform: uppercase; padding: 20px 0px 10px 30px; font-size: 1em; transition: all 0.3s; }
-.main-menus-links ul.sf-menu a:hover, .main-menus-links a.is-active { color: #FFF; }
-
+.main-menus-links ul.sf-menu a:hover, .main-menus-links ul.sf-menu a.is-active { color: #FFF; }
 
  /* Footer Menu */
 .footer-infos a.is-active{ text-decoration: none; }
 
 /* Mobile Navigation */
-.mobile-header ul.slicknav_nav{ margin-top: 80px; }
+.mobile-header ul.slicknav_nav{ margin-top: 120px; }
 .mobile-header .sf-hidden{
   display: block;
   position: relative !important;
@@ -63,13 +62,13 @@ animation: thedrop 1s 1;
 .sticky-header .header1 { margin-top: 15px!important; }
 
 #sliding-popup { width: 100%; }
+.eu-cookie-compliance-banner { background: #fad151; }
 .eu-cookie-compliance-buttons { margin-bottom: 0px; }
-.eu-cookie-compliance-buttons button { font-size: 1em; font-weight: normal; background: #f4f4f4; border: 1px solid #f4f4f4;  border-radius: 0px; border-bottom-left-radius: 25px;
-border-bottom-right-radius: 25px;
-border-top-right-radius: 25px; padding: 10px; }
+.eu-cookie-compliance-buttons button { font-size: 1em; font-weight: normal; background: #1f2223; border: 1px solid #1f2223;border-radius: 360px; padding: 16px 0px;
+width: 200px; }
 .eu-cookie-compliance-message { margin-top: 15px; }
 .eu-cookie-compliance-content { max-width: 100%; padding: 10px 40px; }
-.eu-cookie-compliance-banner .find-more-button, .eu-cookie-compliance-banner p { float: left; font-size: 0.85em;  }
+.eu-cookie-compliance-banner .find-more-button, .eu-cookie-compliance-banner p { float: left; font-size: 0.85em; color: #1f2223; font-family: 'Assistant-Light'; }
 
 /** MOBIL
 ***************************************************/
@@ -92,7 +91,7 @@ border-top-right-radius: 25px; padding: 10px; }
     .main-menus-links, .top-header, .logo { display: none; }
      .main-menus-links.column { margin: 0px; }
     .logo.logo_mobil{ display: block;  }
-    
+
 
 
             .header1 { position: fixed; top: 0px; left: 0px; width: 100%; margin: 0px!important; float: none; z-index: 3000; }

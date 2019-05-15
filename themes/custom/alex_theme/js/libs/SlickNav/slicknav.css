@@ -82,7 +82,7 @@
         margin:2px 0px; text-align: center;
 }
 .slicknav_nav li a.sf-depth-1 {
-    font-size: 1em;
+    font-size: 1em; font-weight: bold;
 }
 .slicknav_nav li a.sf-depth-2 {
     text-transform: none;

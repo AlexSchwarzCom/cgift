@@ -3,30 +3,55 @@
 	position: relative; float: left; width: 100%; border: none; overflow: hidden; clear: both;
 }
 
-.form-container input, .form-container select { background: transparent; border-bottom: 1px solid #f4f4f4; opacity: 1; width: 90%; padding: 12px 0px; margin-bottom: 12px; color: #FFF; }
-.form-container textarea { background: transparent;  border-bottom: 1px solid #f4f4f4;  padding: 12px 0px; margin-bottom: 10px; color: #1f2223; width: 100%; color: #FFF; }
+.form-container input, .form-container select { background: transparent; border-bottom: 1px solid #9ca4a9; opacity: 1; width: 90%; padding: 12px 0px; margin-bottom: 12px; color: #9ca4a9; }
+.form-container textarea { background: transparent;  border-bottom: 1px solid #9ca4a9; padding: 12px 0px; margin-bottom: 30px; color: #9ca4a9; width: 100%; }
 .form-container .button:hover { cursor: pointer; background: #7fd135; border: 1px solid #7fd135; color: #FFF; }
 .form-container label { display: block; margin-bottom: 4px; }
+.form-type-webform-terms-of-service { float: left; width: calc(100% - 212px); }
 
 input::placeholder, textarea::placeholder { opacity:1; }
 
 #front-webform .form-container input, .path-frontpage .form-container select, .path-frontpage .form-container textarea { border-bottom: 1px solid #1f2223; color: #1f2223; opacity:1; }
 #front-webform #edit-actions-submit { background: #1f2223; color: #FFF; }
+#front-webform #edit-actions-submit:hover{ background: #fff; color: #1f2223; }
 #front-webform .form-item-message { width: 100%; }
 #front-webform .form-item-firma { display: none; }
 #front-webform .fieldset-wrapper .form-item-name, .path-frontpage .fieldset-wrapper .form-item-email { width: 48%; float: left; }
-#front-webform #edit-kundendaten .fieldset-wrapper { 
+#front-webform #edit-kundendaten .fieldset-wrapper {
 display: flex; flex-direction: row;
 flex-wrap: wrap;
 justify-content: space-between;
 }
 #front-webform .form-container fieldset { float: none; clear: none; }
-#front-webform h3 { margin: 0px 0px 40px 0px; color: #1f2223; font-family: 'Assistant-Bold'; }
+#front-webform h3 { margin: 0px 0px 40px 0px; color: #1f2223; font-family: 'Assistant-Bold'; font-size: 1.4em; }
 
 #edit-terms-of-service-dsgvo { float: left; margin-right: 10px; margin-top: 20px;  }
-.form-type-webform-terms-of-service label { float: left; display: inline-block; font-size: 0.9em; margin-top:17px; }
-#edit-actions { float: right; margin-left: 6px; }
-#edit-actions input { background: #fad151; margin-top: 20px; border: none; border-radius: 360px; padding: 16px 36px; font-size: 0.9em; }
+.form-type-webform-terms-of-service label { float: left; display: inline-block; font-size: 0.85em; margin-top:17px; line-height: 1.1em; }
+#edit-actions { float: right; margin-left: 12px; }
+#edit-actions input { background: #fad151; color: #1f2223; margin-top: 20px; border: none; border-radius: 360px; padding: 16px 0px; width: 200px;
+	text-align: center; font-size: 1.1em; font-family: 'Assistant-Bold'; text-transform: uppercase;}
+/*	#front-webform #edit-actions input { color: #FFF; }
+	#front-webform #edit-actions input:hover { background: #FFF; color: #fad151; } */
+
+input[type="checkbox"] {
+    display:none;
+}
+input[type="checkbox"] + label::before {
+  width: 30px;
+  height: 30px;
+	margin-top: -7px;
+  border-radius: 0px;
+  border: none;
+  background-color: #fff;
+  display: block;
+  content: "";
+  float: left;
+  margin-right: 10px;
+}
+input[type="checkbox"]:checked+label::before {
+  box-shadow: inset 0px 0px 0px 3px #fff;
+  background-color: #1f2223;
+}
 
  /* ----------------------------------------------------------------------------------------------------
 Super Form Reset
@@ -58,7 +83,7 @@ textarea
 
         /* Browsers have different default form fonts */
         font-size:1em;
-        font-family:'Roboto';
+        font-family: "Assistant-Regular", Helvetica, Arial, sans-serif;
 }
 
 /* Remove the stupid outer glow in Webkit */
@@ -195,10 +220,13 @@ select[multiple]
         vertical-align:top;
 }
 
+
+
 @media only screen and (max-width: 790px) {
 
 .form-container fieldset, #front-webform .fieldset-wrapper .form-item-name, .path-frontpage .fieldset-wrapper .form-item-email {
 	float: none; width: 100%; border: none; overflow: hidden;
 }
-
+.form-type-webform-terms-of-service { width: 100%; }
+#edit-actions { float: none; margin: 10px 0px 30px 0px; }
 }

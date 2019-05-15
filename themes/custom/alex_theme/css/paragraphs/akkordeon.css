@@ -1,9 +1,11 @@
 
 .akkordeon-paragraph {padding: 20px 0px 20px 0px; }
 
-h4.accordeon_header { padding: 10px 0px 20px 0px; margin: 10px 0px; border-bottom: 1px solid #FFF; color: #FFF; font-family: 'Assistant-Regular'; text-transform: uppercase; }
+h4.accordeon_header {
+	 padding: 10px 0px; margin: 0px;
+	 border-bottom: 1px solid #FFF; color: #FFF; font-family: 'Assistant-Regular'; text-transform: uppercase; }
 .paragraph--type--akkordeon-box .accordeon:last-child h4.accordeon_header { border-bottom: none; }
-.accordeon_content { color: #FFF; }
+.accordeon_content { color: #FFF; margin-top: 20px; }
 
 h4.accordeon_header::after {
 	   position: relative;
@@ -15,10 +17,14 @@ h4.accordeon_header::after {
    background: url('../../images/icons/Pfeil-Accordeon-hellgrau.svg') no-repeat;
    background-size: 20px 24px;
    margin-left: 8px;
+	 transition: all 0.6s;
 	   }
+h4.accordeon_header:hover::after, .accordeon.active h4.accordeon_header::after{
+	transform: rotate(90deg);
+}
 
 .paragraph--type--akkordeon-box {
-color: #fad151; padding: 30px 50px 50px 50px; font-family: 'Assistant-SemiBold';
+color: #fad151; padding: 30px 50px 50px 50px;
 }
 
 .column1 .paragraph--type--akkordeon-box {

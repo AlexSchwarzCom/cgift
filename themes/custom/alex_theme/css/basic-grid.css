@@ -19,23 +19,18 @@
     position: relative;
     margin: 0px auto;
     width: 90%;
-max-width: 1400px;
+max-width: 1500px;
  }
- 
+
 .paragraph--type--_er-bereich .paragraph--type--_er-bereich .wrapper {
 	width: 100%!important; max-width: 100%!important;
-} 
+}
  .block-webform-block.popup .wrapper{ margin: 0px; width: 100%; }
 
 .wrapper-small{
     width: 60%;
     max-width: 1024px;
  }
-
- .wrapper-big { width: 94%; max-width: 1800px; margin: 80px auto; }
- .wrapper-grande{ width: 94%; max-width: 1600px; margin: 80px auto; }
-
-.path-frontpage .headerbild .wrapper{ width: 60%; padding: 40px 0px 60px 0px; }
 
  .column{
    position: relative;

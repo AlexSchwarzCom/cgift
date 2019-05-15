@@ -14,9 +14,9 @@
 
  /* a-Behavior */
  a{
-  text-decoration: none; outline: none; color: #1778AD;
+  text-decoration: none; outline: none; color: #fad151;
  }
-a:hover { color: #7fd135; cursor: pointer!important; }
+a:hover { color:/* #7fd135*/ #fff; /*cursor: pointer!important;*/ }
 
  /* img-Behavior */
  img { display: block; width: 100%; height: auto; }
@@ -96,6 +96,7 @@ h1 { font-family: "Assistant-ExtraBold"; font-size: 3.5em; line-height: 1em; fon
 /* H2  color: #737f8d; */
 h2{ letter-spacing: 0.005em; font-size: 1.8em; line-height: 1.4em; font-weight: normal;
  margin: 40px 0px 40px 0px; font-family: "Assistant-Bold"; color: #FFF; }
+.paragraph--type--text h2{ margin: 0px 0px 20px 0px; color: #fad151; }
 
 /* H3 */
 h3 { font-weight: normal; font-size: 1.1em;  margin: 40px 0px 10px 0px; font-family: "Assistant-Regular"; color: #FFF;}
@@ -256,7 +257,7 @@ td {
 
 @media only screen and (min-width: 1921px) {
   .paragraph { margin: 60px 0px; }
-   body { font-size: 94%; }
+
 }
 
 @media only screen and (max-width: 1023px) {

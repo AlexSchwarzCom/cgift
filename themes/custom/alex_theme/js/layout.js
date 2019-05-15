@@ -9,8 +9,12 @@
 
   $(document).ready(function() {
 
-$('#scene').parallax(); 
- 
+    if( $('#scene').length )
+        {
+         $('#scene').parallax();
+    }
+
+
     // initialization of text animation (typing)
             $(".u-text-animation.u-text-animation--typing").typed({
               strings: ["Arbeitsmedizin", "Arbeitssicherheit", "Brandschutz", "Datenschutz", "Elektrosicherheit"],

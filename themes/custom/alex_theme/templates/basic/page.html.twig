@@ -98,7 +98,7 @@
                 <div class="clear"></div>
 		  </main>
 
-
+<div class="footer-line"></div>
 <!-- ###################### FOOTER  ###################### -->
   <footer role="contentinfo" class="footer">
 
@@ -115,34 +115,34 @@
 	         	<div class="footer1">
 	          		<img src="{{ base_path }}{{ directory }}/images/icons/CGift-Standort.Footer.svg" alt="Startseite" />
 	           </div>
-	           
+
 	           	<div class="footer-kontakt">{{ page.footer }}</div>
-	
-	         	
+
+
 	         	{% if is_front %}
-	         	
+
 	         	<div id="front-webform" class="footer2">{{ attach_library('alex_theme/kontaktformular-css') }}
 	         	<h3>{% trans %}Jetzt kostenlose Erstberatung vereinbaren{% endtrans %}</h3>
 	         	{{ page.footer3 }}
 	         	</div>
-	         	
+
 	            {% else %}
-	         	
+
 	         	<div class="footer2 flexbox-container">
 		            <span class="app-icon" style="background-image: url({{ base_path }}{{ directory }}/images/icons/app-icon-apple-white.svg)"></span>
 		            <span class="app-icon"style="background-image: url({{ base_path }}{{ directory }}/images/icons/app-icon-android-white.svg)"></span>
 		            <p>Jetzt kostenlos unsere<br />CGift App downloaden</p>
 	          	</div>
-	          
+
 	          {% endif %}
-	          
+
 		   </div>
 
-		 
-            <div class="clear"></div>          
+
+            <div class="clear"></div>
          	    <div class="footer-bottom">
                 <div class="bottom-nav column">{{ page.agbmenue }}</div>
-                <div class="copy column"><span>&copy; {{ "now"|date("Y") }}</span> {{ page.firmenname }}</span> Webdesign by <a href="geschmackslabor.de" target="_blank">geschmackslabor.de</a></div>
+                <div class="copy column"><span>&copy; {{ "now"|date("Y") }}</span> {{ page.firmenname }}</span> Webdesign by <a href="https://www.geschmackslabor.de/" target="_blank">geschmackslabor.de</a></div>
               </div>
 
   </footer>

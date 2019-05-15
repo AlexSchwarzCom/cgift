@@ -11,11 +11,15 @@
 	position: relative;
 }
 
-.parallax-headline { 
+#parallax-wrapper img {
+  max-width: 1000px;
+}
+
+.parallax-headline {
 	position: absolute; z-index: 1;
 	font-size: 0.9em;
 	}
-	
+
 .layer { right: 0px; top: 0px; max-width:53%; padding-top: 0%; margin-left: 40%;  }
 
 .layer-1 { z-index: 100; }
@@ -27,7 +31,7 @@
 
 @media only screen and (max-width: 900px) {
 
- 
+
  .parallax-headline {
  	position: relative;
  }
