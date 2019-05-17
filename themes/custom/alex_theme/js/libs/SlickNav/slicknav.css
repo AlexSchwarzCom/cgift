@@ -47,7 +47,7 @@
 }
 /* Button Lines */
 /*  Position */
-.slicknav_btn.slicknav_open{ margin-right: 45px; margin-top: 8px; }
+.slicknav_btn.slicknav_open{ margin-right: 30px; margin-top: 25px; }
 .slicknav_btn .slicknav_icon-bar {  background-color: #fad151; transition: all 0.6s; }
 /* aus Strichen ein X machen - wenn Menu offen ist */
 .slicknav_btn.slicknav_open .slicknav_icon-bar { position: absolute; background-color: #fad151;  }
@@ -82,12 +82,12 @@
         margin:2px 0px; text-align: center;
 }
 .slicknav_nav li a.sf-depth-1 {
-    font-size: 1em; font-weight: bold;
+    font-size: 1.8em; font-weight: bold;
 }
 .slicknav_nav li a.sf-depth-2 {
     text-transform: none;
 }
-.slicknav_nav li.sf-depth-1:hover a.sf-depth-1, .slicknav_nav li.sf-depth-2:hover a.sf-depth-2{ text-decoration: underline; }
+.slicknav_nav li.sf-depth-1:hover a.sf-depth-1, .slicknav_nav li.sf-depth-1 a.is-active.sf-depth-1{ color: #fff; }
 
 /* Pfeil */
 .mobile-header .slicknav_nav .slicknav_arrow{

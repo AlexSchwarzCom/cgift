@@ -12,8 +12,8 @@
 input::placeholder, textarea::placeholder { opacity:1; }
 
 #front-webform .form-container input, .path-frontpage .form-container select, .path-frontpage .form-container textarea { border-bottom: 1px solid #1f2223; color: #1f2223; opacity:1; }
-#front-webform #edit-actions-submit { background: #1f2223; color: #FFF; }
-#front-webform #edit-actions-submit:hover{ background: #fff; color: #1f2223; }
+ #edit-actions-submit { background: #1f2223; color: #FFF; }
+ #edit-actions-submit:hover{ background: #fff; color: #1f2223; }
 #front-webform .form-item-message { width: 100%; }
 #front-webform .form-item-firma { display: none; }
 #front-webform .fieldset-wrapper .form-item-name, .path-frontpage .fieldset-wrapper .form-item-email { width: 48%; float: left; }
@@ -30,8 +30,6 @@ justify-content: space-between;
 #edit-actions { float: right; margin-left: 12px; }
 #edit-actions input { background: #fad151; color: #1f2223; margin-top: 20px; border: none; border-radius: 360px; padding: 16px 0px; width: 200px;
 	text-align: center; font-size: 1.1em; font-family: 'Assistant-Bold'; text-transform: uppercase;}
-/*	#front-webform #edit-actions input { color: #FFF; }
-	#front-webform #edit-actions input:hover { background: #FFF; color: #fad151; } */
 
 input[type="checkbox"] {
     display:none;
