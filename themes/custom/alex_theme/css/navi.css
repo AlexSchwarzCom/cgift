@@ -28,6 +28,19 @@
 .main-menus-links ul.sf-menu a { font-family: 'Assistant-Bold'; color: #fad151; text-transform: uppercase; padding: 20px 0px 10px 30px; font-size: 1em; transition: all 0.3s; }
 .main-menus-links ul.sf-menu a:hover, .main-menus-links ul.sf-menu a.is-active { color: #FFF; }
 
+/* Seitennavigation
+/**********************************************/
+#block-seitennavigation{ margin-top: 120px; }
+#block-seitennavigation ul{ padding: 0px 50px 0px 0px; }
+#block-seitennavigation li{ padding: 20px 0px; margin-bottom: 0px; border-bottom: 1px solid #fff;}
+#block-seitennavigation a{ text-transform: uppercase; }
+#block-seitennavigation a.is-active{ color: #fff; }
+
+/* Mobile Seitennavigation */
+.mobile-header #block-seitennavigation{ margin-top: 50px; display: none; }
+.mobile-header #block-seitennavigation ul{ padding: 0px; }
+.mobile-header #block-seitennavigation li{ padding: 8px 0px; border-bottom: none; text-align: center; }
+.mobile-header #block-seitennavigation a{ display: block; font-size: 1.6em; }
  /* Footer Menu */
 .footer-infos a.is-active{ text-decoration: none; }
 
@@ -88,16 +101,17 @@ width: 200px; }
   #header.opened{ height: auto; }
    /* Hauptmenu */
     .mobile-header{ display: block; position: relative; }
+    #header.opened .mobile-header #block-seitennavigation{ display: block; }
     .main-menus-links, .top-header, .logo { display: none; }
      .main-menus-links.column { margin: 0px; }
     .logo.logo_mobil{ display: block;  }
 
 
 
-            .header1 { position: fixed; top: 0px; left: 0px; width: 100%; margin: 0px!important; float: none; z-index: 3000; }
-            #block-views-block-firmendaten-block-3 a { padding-left: 4%; }
-            .sticky-header .header1 { margin-top: 0px !important; }
-           #block-views-block-firmendaten-block-3 a { width: 100%; border-radius: 0px; display: block; margin: 0px;}
+    .header1 { position: fixed; top: 0px; left: 0px; width: 100%; margin: 0px!important; float: none; z-index: 3000; }
+    #block-views-block-firmendaten-block-3 a { padding-left: 4%; }
+    .sticky-header .header1 { margin-top: 0px !important; }
+    #block-views-block-firmendaten-block-3 a { width: 100%; border-radius: 0px; display: block; margin: 0px;}
 
 
   }

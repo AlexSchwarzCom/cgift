@@ -24,9 +24,19 @@
       </div>
     {% endif %}
   </header>
-
-    <div class="page-body">
-        {{ content.field_inhaltsbereich }}
+  
+  <div class="page-body">
+  {% if node.id == 2 or node.id == 3 or node.id == 10 %}
+   <div class="wrapper">
+      <div class="flexbox-container">
+        <div class="one-thirds">{{ drupal_entity('block', 'seitennavigation', check_access=false) }}</div>
+        <div class="two-thirds">{{ content.field_inhaltsbereich }}</div>
+       </div>
+    </div>
+   {% else %}
+    {{ content.field_inhaltsbereich }}
+   {% endif %}  
+       
     </div>
 
     <div class="clear"></div>

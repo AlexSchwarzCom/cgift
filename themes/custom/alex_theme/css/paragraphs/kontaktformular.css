@@ -29,7 +29,9 @@ justify-content: space-between;
 .form-type-webform-terms-of-service label { float: left; display: inline-block; font-size: 0.85em; margin-top:17px; line-height: 1.1em; }
 #edit-actions { float: right; margin-left: 12px; }
 #edit-actions input { background: #fad151; color: #1f2223; margin-top: 20px; border: none; border-radius: 360px; padding: 16px 0px; width: 200px;
-	text-align: center; font-size: 1.1em; font-family: 'Assistant-Bold'; text-transform: uppercase;}
+	text-align: center; font-size: 1.1em; font-family: 'Assistant-Bold'; text-transform: uppercase; }
+#front-webform #edit-actions input{ background: #000; color: #fff; }
+#front-webform #edit-actions input:hover{ background: #fff; color: #000; }
 
 input[type="checkbox"] {
     display:none;

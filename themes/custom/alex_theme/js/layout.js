@@ -84,6 +84,18 @@
 
 /**********************************************/
 
+/* Leistungen weiterlesen */
+
+$(".page-node-8 .paragraph--type--text p a[href='#']").addClass('more');
+
+$(".page-node-8 .more").click(function(event){
+   event.preventDefault();
+   if($(this).parent('p').next().hasClass('phidden')){
+     $(this).parent('p').next().removeClass('phidden').addClass('pshow');
+   }else{
+     $(this).parent('p').next().removeClass('pshow').addClass('phidden');
+   }
+});
 
   /**********************************************/
 

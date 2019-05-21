@@ -107,7 +107,7 @@ max-width: 1500px;
 ===================================================*/
   @media only screen and (min-width: 481px) and (max-width: 768px) {
               .one-six { width: 20%; }
-               }
+  }
 
 /* #Mobile (Landscape)
 ================================================== */
@@ -117,8 +117,10 @@ max-width: 1500px;
     @media only screen and (min-width: 0px) and (max-width: 768px) {
 
         .one-four { width: 50%; }
-        .one-two, .one-three { width: 100%; padding-right: 0px; padding-left: 0px; }
+        .one-two, .one-three{ width: 100%; padding-right: 0px; padding-left: 0px; }
         .one-two.column, .one-three.column { float: none; }
+        .one-thirds{ width: 100%; margin-right: 0px; }
+        .two-thirds{ width: 100%; }
 
         /* Filter */
         select, .js-form-type-textfield input{ width: 190px;  }
